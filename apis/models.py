@@ -7,3 +7,9 @@ class Post(models.Model):
     text = models.CharField(max_length=255)
     author = models.ForeignKey(to=User, on_delete=models.CASCADE)
     
+
+
+class Student(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+
