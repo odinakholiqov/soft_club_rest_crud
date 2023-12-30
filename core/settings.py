@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "rest_framework",
 
     # local apps
-    "apis.apps.ApisConfig"    
+    "apis.apps.ApisConfig",
+    "gps.apps.GpsConfig", 
 ]
 
 MIDDLEWARE = [

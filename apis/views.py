@@ -10,7 +10,7 @@ class PostListCreateView(ListCreateAPIView):
     permission_classes = (IsAuthenticatedOrReadOnly,)
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-
+    
 
 class PostRetriveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     lookup_field = "id"
